@@ -1,0 +1,188 @@
+:root {
+    --piel-color: #f8bca9;    
+}
+
+body {
+    margin: 0;
+    text-align: center;    
+    font-size: 20px;
+}
+
+.cabeza-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.cabeza .pelo {
+    background-color: #5f0000;
+    height: 1.5em;
+    width: 5em;
+    border-radius: 0 2em 0 0;
+}
+
+.cabeza .cara {
+    background-color: var(--piel-color);
+    border-radius: 0 0 2.3em 2.3em;
+    border-bottom: 1px solid black;
+}
+
+.cabeza .cara .frente {
+    height: 1em;
+}
+
+.cabeza .cara .ojos {
+    display: flex;
+    justify-content: center;
+}
+
+.cabeza .cara .ojo-izquierdo, .ojo-derecho {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 1em;
+    height: 0.5em;
+    background-color: #ffffff;
+    margin: 0 0.5em;
+}
+
+.cabeza .cara .ojos .pupila {
+    border-radius: 50%;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #005f00;
+    margin: 0 auto;
+}
+
+.cabeza .cara .orejas {
+    display: flex;
+    width: 120%;
+    margin-top: -1em;
+    margin-left: -0.5em;
+    justify-content: space-between;
+}
+
+.cabeza .cara .orejas .oreja-izquierda {
+    border-radius: 20% 0 0 20%;
+    height: 1.5em;
+    width: 0.5em;
+    background-color: #f4bca0;
+    border-right: 1px solid black;
+}
+
+.cabeza .cara .orejas .oreja-derecha {
+    border-radius: 0 20% 20% 0;
+    height: 1.5em;
+    width: 0.5em;
+    background-color: #f4bca0;
+    border-left: 1px solid black;
+}
+
+.cabeza .cara .nariz {
+    width: 0.7em;
+    height: 0.5em;
+    background-color: #f4bca0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 0.3em 0.3em;
+    margin: 0 auto;
+}
+
+.cabeza .cara .boca {
+    margin: 0 auto;
+    height: 0.3em;
+    width: 2em;
+    background-color: #aa0000;
+    border-radius: 0 0 50% 50%;
+    margin-top: 0.6em;
+}
+
+.cabeza .cara .menton {
+    height: 1em;
+}
+
+.cabeza .cuello {
+    background-color: var(--piel-color);
+    height: 2em;
+    width: 2em;
+    margin: 0 auto;
+    margin-top: -1em;
+    position: relative;
+    z-index: -1;
+}
+
+.tronco {
+    display: flex;
+    justify-content: center;
+}
+
+.tronco .centro .centro-superior {
+    width: 4em;
+    height: 3em;
+    background-color: var(--piel-color);
+    border-radius: 0 0 0.5em 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.tronco .centro .centro-inferior {
+    width: 3.9em;
+    height: 4em;
+    background-color: var(--piel-color);
+    margin: 0 auto;
+    margin-top: -0.5em;
+    position: relative;
+    z-index: -1;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tronco .brazo-izquierdo, .brazo-derecho {
+    width: 1.2em;
+    height: 9em;
+    background-color: var(--piel-color);
+}
+
+.tronco .brazo-izquierdo {
+    border-radius: 1em 0 0 0;
+}
+
+.tronco .brazo-derecho {
+    border-radius: 0 1em 0 0;
+}
+
+.tronco .centro .pelvis {
+    height: 2.5em;
+    width: 3.9em;
+    background-color: var(--piel-color);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+}
+
+.tronco .centro .pelvis .nepe {
+    height: 30%;
+    width: 1em;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 0 0 50% 50%;
+}
+
+.piernas {
+    height: 9em;
+    width: 3.9em;
+    margin: 0 auto;
+    display: flex;
+}
+
+.piernas .pierna-izquierda, .pierna-derecha {
+    background-color: var(--piel-color);
+    height: 100%;
+    width: 50%;
+}
+
+.piernas .pierna-izquierda {
+    border-right: 1px solid black;
+}
